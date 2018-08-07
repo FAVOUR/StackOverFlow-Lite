@@ -1,2 +1,0 @@
-# StackOverFlow-Lite
-Developer Challenge 
