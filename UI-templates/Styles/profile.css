@@ -1,0 +1,183 @@
+body{
+	margin:0;
+	padding: 0;
+}
+
+
+#profile_activity_col{
+	width:80%;
+    display:flex;
+    flex-direction:column;
+}
+
+#details_card{
+	margin: 30px;
+	padding: 40px;
+	border-radius: 30px;
+	background-color: white; 
+	display:flex;
+	flex: 1;
+}
+
+li{
+	display: inline-block;
+	margin:0;
+	padding:0;
+
+}
+
+/*Profile section*/
+
+#image_box{
+
+
+flex:1;
+}
+
+#profile_image{
+	margin-right: 10px;
+	height:300px;
+	width:300px;
+	border-radius:150px;	
+}
+
+
+
+/*all details section*/
+
+#all_details{
+   flex:3;
+   display: flex;
+   flex-direction:column;
+}
+
+#main_details{
+margin-top: 13px;
+flex:1;
+}
+
+#other_details{
+flex:1;
+}
+
+figure{
+position: center;
+padding:3px;
+margin:5px;
+
+}
+
+.user_info{
+	display:block;
+	margin-bottom:10px;
+}
+
+#username{
+    font-size:35px;
+    font-weight:bold;
+}
+
+#surname{
+	font-size:25px;
+  
+}
+
+#about{
+	font-size:20px;
+   
+}
+
+.icon{
+	margin:10px;
+	height:20px;
+	width: 20px;
+	border-radius:10px;
+	/*flex:1;*/
+}
+
+
+/*activites section*/
+
+#activity{
+	/*width:80%;*/
+	flex: 1;
+	display:flex;
+	flex-direction: column;
+}
+
+#users_question_and_answers{
+flex: 1;
+display:flex;
+flex-direction: row;
+
+}
+
+/*question_asked_wrapper*/
+
+#question_asked_wrapper{
+    flex: 1;
+}
+
+
+/*questions asked*/
+#questions_asked{
+	background-color:white;
+	margin-right:20px;
+	display:flex;
+}
+
+#most_answers{
+	margin-top:100px;
+}
+
+/*answers given wrapper*/
+#answers_given_wrapper{	 
+	flex: 1;  
+}
+
+/*answers given*/
+#answers_given{
+	background-color: white; 
+	margin-left:20px;  
+	display:flex;
+}
+
+
+
+.question_answer{
+	margin:auto;
+	display: flex;
+	flex-direction: column;
+}
+
+figcaption.total{
+	margin:auto;
+	font-size: 150px;
+/*	font-weight:bold;*/
+
+}
+
+.achivement{
+	font-size:30px;
+}
+
+
+hr{
+	display:block;
+	height: 1px;
+	color:red;
+	border-top:0;
+	margin:0 1px;
+}
+
+.shadow{
+	 border-radius: 10px;
+	-webkit-box-shadow: 3px 3px 5px 6px #ccc;
+	-moz-box-shadow: 3px 3px 5px 6px #ccc;
+     box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+h2{
+	margin-top: 70px;
+}
+
