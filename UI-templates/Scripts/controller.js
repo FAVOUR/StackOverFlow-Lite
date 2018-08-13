@@ -6,11 +6,11 @@ function myFunction(){
 
   let x = document.getElementById("myTopnav");
    if (x.className === "topnav") {
-   	    console.log("lets collabo");
+   	    console.log("lets   collabo");
         x.className += " responsive";
     
     } else {
-    	console.log("dont   collabo");
+    	console.log("dont collabo");
         x.className = "topnav";
         
     }
