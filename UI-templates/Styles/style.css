@@ -1,7 +1,4 @@
-/*
-html{
-	height:100%;
-}*/
+
 body{
   font: 15px/1.5 Arial, Helvetica,sans-serif;
   margin:0; 
@@ -127,35 +124,95 @@ a.sidebar_link{
 
 
 
-/*article*/
+/*User questions (particularly recent)*/
 article{
 	float:right;
 	width:80%;
 	display:flex;
 	flex:1;
-     margin: auto;
+  margin: auto;
 	flex-direction: column;
 
 }
 
+#recent_question{
+  display:flex;
+  flex-direction: column;
+
+}
+
+.value{
+  color:black;
+  font-size:35px
+
+}
+
+.caption{
+  font-size: 15px;
+  color:black;
+}
+
  .user_question_wrapper{
- 	height: 90px;
  	background-color: white;
- 	/*padding-top:60px;*/
- 	margin:40px 30px;
+  margin:40px 30px;
  	border-radius: 5px;
  	text-align: center;
  	 display:flex;
-  /*flex-direction:column;*/
+ /* flex-direction:column;*/
 
+ }
+
+ .contribution{
+  display:flex;
+  flex:1;
+ }
+
+ #other_details{
+  flex:1;
+  order:1;
  }
 
 
  a.user_question{
 	margin:auto;
+  flex:30;
 	font-size: 20px;
+  order:2;
 	color:blue;
 
+}
+
+
+.question_details{
+
+  display: flex;
+/*  height:20%;*/
+align-items: flex-end;
+  flex-direction:column;
+   flex:7;
+  order:2;
+  
+  /*flex-flow:column-reverse;*/
+}
+
+.time_instance{
+  flex:1;
+  margin:0;
+ /* display:inline-block;*/
+}
+
+.user_details{
+    flex:1;
+     margin:0;
+   /* display:inline-block;
+    display:inline-block;*/
+}
+
+.user_icon{
+  width:50px;
+  height:50px;
+   margin:0;
+  border-radius:20px;
 }
 
 /*styling for users question and answer*/
@@ -171,6 +228,8 @@ article{
 /*user question*/
 .user_question{
       background-color: white;
+
+
   }
 
 h2{
@@ -226,12 +285,34 @@ textarea{
 	 justify-content: center;
 	 font-size: 20px;
 	 resize: none;
-	 color:#000000;
-/*	 padding: 20px;*/
+	 /*color:#000000;*/
     	 
 }
    
 
+
+#question_title{
+text-align: center;
+}
+
+
+
+textarea#title_box{
+   width:95%;
+   height:30%;
+   margin-right:30px;
+
+  /* margin:auto;
+*/   overflow:hidden;
+}
+
+/*#title_section{
+    margin:0;
+}*/
+
+/*.contribution{
+  margin :auto;
+}*/
 
 .shadow{
 	 border-radius: 10px;
