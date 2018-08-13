@@ -10,7 +10,7 @@ function myFunction(){
         x.className += " responsive";
     
     } else {
-    	console.log("dont collabo");
+    	console.log("dont   collabo");
         x.className = "topnav";
         
     }
