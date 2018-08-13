@@ -299,3 +299,39 @@ input{
 .connect{
 	margin:50px 0 0 0 ;
 }
+
+
+.icon{
+	 display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+	.container{
+		display: flex;
+	}
+
+.topnav {
+    display:none;
+  }
+#main_nav{
+ display: none;
+	
+}
+   .icon {
+    font-size:30px;
+    display: inline;
+    margin:20px 2px 0 5px;
+    flex:1;
+    order:1;
+  /* flex:1;*/
+  }
+
+  #wrapper {
+   /* float:right;
+    display: inline-block;*/
+       flex:5;
+       order:2;
+  }
+
+   

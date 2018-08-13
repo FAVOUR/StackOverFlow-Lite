@@ -13,17 +13,28 @@
       <div id="wrapper">
       <h1>StackOverflow-Lite</h1>
         </div>
-        <nav>
-          <ul>
-              <li><a href="recent-question.html" class="top_nav_page"  > Recent Questions</a></li>
-                <li><a href="ask a question.html" class="top_nav_page" > Ask a Question</a></li>
+    
+        <nav class="topnav">
+          <ul id="main_nav" >
+              <li><a href="index.html" class="top_nav_page"  > Recent Questions</a></li>
+                <li><a href="ask_a_question.html" class="top_nav_page" > Ask a Question</a></li>
                  <!-- <li> <img src="Image/img_avatar.png" alt="Avatar" ></li> -->
-                <li id="logout"> <a href="index.html" class="top_nav_page" > Logout</a></li>  
+                <li id="logout"> <a href="signin.html" class="top_nav_page" > Logout</a></li>  
           </ul>
+
+            <!-- <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                <ul id="myDropdown" class="dropdown-content">
+                 <li></li> <a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li><a href="#">Link 3</a></li>
+                </ul>
+            </div> -->
         </nav>
+         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
   </header>
-         <section id="main">
+         <main id="main">
               <div class="container">
 
                  <aside id="sidebar">
@@ -31,13 +42,13 @@
 
                   <div class="left_sidebar">
 
-                           <a href="recent-question.html" class="sidebar_link">Recent Questions </a>
+                           <a href="index.html" class="sidebar_link">Recent Questions </a>
 
                             </div>
 
                                  <div  class="left_sidebar">
                 
-                                    <a href="ask a question.html" class="sidebar_link"> Ask a Question </a>
+                                    <a href="ask_a_question.html" class="sidebar_link"> Ask a Question </a>
                  
                             </div>
 
@@ -62,29 +73,30 @@
                          <img id="profile_image" src="./Image/img_avatar.png" alt="user_image"/>
                            </div>
                            <section id="all_details">
-
+                            
                              <ul id="main_details">
                                   <li id="username" class="user_info">Olije Favour</li>
                                    <li id="surname" class="user_info"> @fav</li>
-                                    <li id="about"  class="user_info">I am a web developer and android dev with over 3 years experience. Iam a really creative person who loves technology</li>
+                                    <li id="about"  class="user_info">I am a web developer and android dev with over 3 years experience. Iam a really creative person who loves technology
+                                    </li>
                                     
                              </ul>
 
 
                                  <ul id="other_details">
 
-                                      <li id="location">
+                                      <li id="location" class="details">
                                            <figure>
-                                             <img src="./Image/location-pin.png" class="icon" alt="location">
+                                             <img src="./Image/location-pin.png" class="img_icon" alt="location">
                                                 <figcaption>
                                                     Nigeria
                                                 </figcaption>
                                            </figure>
                                       </li>
 
-                                           <li id="github"> 
+                                           <li id="github" class="details"> 
                                          <figure>
-                                             <img src="./Image/github.png" class="icon" alt="github">
+                                             <img src="./Image/github.png" class="img_icon" alt="github">
                                                 <figcaption>
                                                      <a href="">FAVOUR</a>
                                                 </figcaption>
@@ -93,9 +105,9 @@
                                            </li>
                                     
 
-                                      <li id="last_seen"> 
+                                      <li id="last_seen" class="details"> 
                                          <figure>
-                                             <img src="./Image/last_seen.png" class="icon" alt="last_seen">
+                                             <img src="./Image/last_seen.png" class="img_icon" alt="last_seen">
                                                 <figcaption>
                                                      2 days ago
                                                 </figcaption>
@@ -104,9 +116,9 @@
 
 
                                             
-                                       <li id="view"> 
+                                       <li id="view" class="details"> 
                                          <figure>
-                                             <img src="./Image/view.png" class="icon" alt="views">
+                                             <img src="./Image/view.png" class="img_icon" alt="views">
                                                 <figcaption>
                                                     <span>12</span>view(s)
                                                 </figcaption>
@@ -115,33 +127,32 @@
                                            </li>
                                  </ul>
 
-                              </section>
-
-                      </div>
-
-
-           </section>
+                             </div> 
+                          
+                      </section>
 
 
+           <!-- </article>
+ -->
 
-         
 
 
            <section id="activity">
-
+                   <div id="title_box">
                    <h2>Activites</h2>
-
-
+                    </div>
 
                        <article id="users_question_and_answers" >
                            <section id="question_asked_wrapper" >
                           <div id="questions_asked" class="shadow">
 
                              <figure class="question_answer">
-                                <figcaption class="total"> 7</figcaption> 
+                                <figcaption class="achivement" >
+                                    <p class="total"> 7</p>    
                                 <hr/>
-                               <figcaption class="achivement"> 
+                                     <p class="achivement_title">  
                                  Questions Asked 
+                                      </p>
                                </figcaption>
 
                              </figure>
@@ -154,10 +165,12 @@
                           <div id="answers_given" class="shadow">
 
                              <figure class="question_answer">
-                                 <figcaption class="total"> 6</figcaption>
-                                  <hr/> 
-                               <figcaption class="achivement"> 
+                                  <figcaption class="achivement" >
+                                    <p class="total"> 7</p>    
+                                <hr/>
+                                      <p class="achivement_title"> 
                                  Questions Answered
+                                      </p>
                                </figcaption>
 
                              </figure>
@@ -168,15 +181,17 @@
            </article>
 
           
-         </section>                  
+        <!--  </section>  -->                 
 
                  
                
               <article>
-                 <section id="user_question_container">
+                 <section class="user_question_container">
+
 
                     <h2 id="most_answers">Questions with most answers</h2>
-                          <ul id="recent_question">
+                          <ul class="recent_question">
+
 
                               <li class="user_question_wrapper shadow">
 
@@ -215,41 +230,18 @@
 
                             <a class="user_question" href="clicked-question.html"> Xampp installation error: Error running cmd.exe/C start/ MIN net </a>
                              </li>
-<!-- 
-                              <li class="user_question_wrapper shadow">
-
-                                                    <a class="user_question" href="clicked-question.html">         Pechkin dll (htmltopdf conversion) style issue with https protocol </a>
-                               </li>
-                                    <li class="user_question_wrapper shadow">
-
-
-                              <a class="user_question" href="clicked-question.html">         How to talk about my comfortable lifestyle without sounding like I'm bragging? </a>  
-                      </li>
-                         <li class="user_question_wrapper shadow">
-
-                        <a class="user_question" href="clicked-question.html">         Which is more valued, first authorship articles or the number of articles produced? </a>
-                                   </li>
-                        <li class="user_question_wrapper shadow">
-
-
-                       <a class="user_question" href="clicked-question.html"> Coverage report works in Jenkins using Jacoco but I cannot get coverage report in SonarQube   </li>
-
-                             <li class="user_question_wrapper shadow">
-
-
-                        <a class="user_question" href="clicked-question.html"> Spring boot @Decimalmin and @Decimalmax not working in request </a>
-                             </li>
-
-                                   </ul> -->
+                      </ul>
                            </section>
 
                            </article>
 
                               <article>
-                 <section id="user_question_container">
+                 <section class="user_question_container">
+
 
                     <h2>Recent Questions asked </h2>
-                          <ul id="recent_question">
+                          <ul class="recent_question">
+
 
                               <li class="user_question_wrapper shadow">
 
@@ -271,7 +263,7 @@
                                  <a class="user_question" href="clicked-question.html"> Pechkin dll (htmltopdf conversion) style issue with https protocol </a>
 
                             </li>
-
+                              
                                 <li class="user_question_wrapper shadow">
 
 
@@ -292,26 +284,7 @@
                               <li class="user_question_wrapper shadow">
 
                                                     <a class="user_question" href="clicked-question.html">         Pechkin dll (htmltopdf conversion) style issue with https protocol </a>
-                       <!--         </li>
-                                    <li class="user_question_wrapper shadow">
-
-
-                              <a class="user_question" href="clicked-question.html">         How to talk about my comfortable lifestyle without sounding like I'm bragging? </a>  
-                      </li>
-                         <li class="user_question_wrapper shadow">
-
-                        <a class="user_question" href="clicked-question.html">         Which is more valued, first authorship articles or the number of articles produced? </a>
-                                   </li>
-                        <li class="user_question_wrapper shadow">
-
-
-                       <a class="user_question" href="clicked-question.html"> Coverage report works in Jenkins using Jacoco but I cannot get coverage report in SonarQube   </li>
-
-                             <li class="user_question_wrapper shadow">
-
-
-                        <a class="user_question" href="clicked-question.html"> Spring boot @Decimalmin and @Decimalmax not working in request </a>
-                             </li> -->
+                      
 
                                    </ul>
                            </section>
@@ -339,7 +312,7 @@
                             <div class="form-row">
                                 <button class="subscribe_button" type="submit" >Subscribe</button>
                             </div>
-                        </div>
+                        
                         <div class="footer-col social">
                             <h3 class="connect">
                                 Connect With Us

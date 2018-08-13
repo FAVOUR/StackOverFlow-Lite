@@ -6,6 +6,7 @@ body{
 
 #profile_activity_col{
 	width:80%;
+	flex:1;
     display:flex;
     flex-direction:column;
 }
@@ -16,7 +17,9 @@ body{
 	border-radius: 30px;
 	background-color: white; 
 	display:flex;
+	/*flex-direction:column;*/
 	flex: 1;
+
 }
 
 li{
@@ -29,7 +32,6 @@ li{
 /*Profile section*/
 
 #image_box{
-
 
 flex:1;
 }
@@ -58,6 +60,7 @@ flex:1;
 
 #other_details{
 flex:1;
+display:flex;
 }
 
 figure{
@@ -65,6 +68,9 @@ position: center;
 padding:3px;
 margin:5px;
 
+}
+.details{
+margin:auto;
 }
 
 .user_info{
@@ -79,15 +85,13 @@ margin:5px;
 
 #surname{
 	font-size:25px;
-  
 }
 
 #about{
 	font-size:20px;
-   
 }
 
-.icon{
+.img_icon{
 	margin:10px;
 	height:20px;
 	width: 20px;
@@ -100,9 +104,13 @@ margin:5px;
 
 #activity{
 	/*width:80%;*/
-	flex: 1;
+	/*flex: 1;
 	display:flex;
-	flex-direction: column;
+	flex-direction: column;*/
+}
+
+#title_box{
+	flex:1;
 }
 
 #users_question_and_answers{
@@ -147,18 +155,25 @@ flex-direction: row;
 .question_answer{
 	margin:auto;
 	display: flex;
+	text-align: center;
 	flex-direction: column;
 }
 
-figcaption.total{
+.achivement{
 	margin:auto;
 	font-size: 150px;
 /*	font-weight:bold;*/
 
 }
 
-.achivement{
+p.total{
+	margin:0;
+}
+
+.achivement_title{
 	font-size:30px;
+	/*margin:0;*/
+
 }
 
 
@@ -180,4 +195,6 @@ hr{
 h2{
 	margin-top: 70px;
 }
+
+
 
