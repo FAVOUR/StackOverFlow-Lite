@@ -16,9 +16,9 @@ describe(`Testing welcome api  /api/v1 `, (done) =>{
             res.body.should.have.status(200);
             res.body.should.have.property('string');
              done();
-	       }) 
-	       })
-})
+	       }) ;
+	});
+});
 
 
 describe(`Test all questions api /api/v1/questions`, (done) =>{
