@@ -71,6 +71,7 @@ const answers = {
    * @param {number}   answer id
    * @return {object}  it returns null if answer esists else it returns null
    */
+  
   getAnswer(id) {
     const answer = this.fetchedAnswer.find(a => a.id === id);
     if (answer === undefined || answer === null) return null;
