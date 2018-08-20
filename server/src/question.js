@@ -70,7 +70,7 @@ const questi = {
      * @param  {number} id of the question
      * @return {object} details of the question
      */
-  getAQuestions(questionid) {
+  getAQuestion(questionid) {
     const question = fetchedQuestions.find(quest => quest.id === questionid);
     if (question === undefined || question === null) return null;
     return question;

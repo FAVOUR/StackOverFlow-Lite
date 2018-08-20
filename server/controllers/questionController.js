@@ -16,11 +16,11 @@ res.status(200).send(result) };
 
 static getAQuestion(req,res){
 const questionId =parseInt(req.params.questionid)
-const question = questions.getQuestion(questionId);
+const question = questions.getAQuestion(questionId);
     if (question === null) {
       return res.status(404).json({
         status: 'error',
-        message: 'Wrong question id',
+        message: 'Wrong question id ',
       });
     }
 
@@ -29,9 +29,17 @@ const question = questions.getQuestion(questionId);
       message: 'fetched the question',
       question,
     });
-}
+
 
 }
+
+
+
+
+
+
+}
+
 
 
 
