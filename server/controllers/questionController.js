@@ -13,6 +13,49 @@ const result = {
     };
 
 res.status(200).send(result) }; 
+
+static getAQuestion(req,res){
+const questionId =parseInt(req.params.questionid)
+const question = questions.getAQuestion(questionId);
+    if (question === null) {
+      return res.status(404).json({
+        status: 'error',
+        message: 'Wrong question id ',
+      });
+    }
+
+    return res.status(200).json({
+      status: 'success',
+      message: 'fetched the question',
+      question,
+    });
+
+
 }
+
+
+static postAQuestion(req,res){
+const quest =req.params.question
+const question = questions.postAQuestion(quest);
+    if (question === null) {
+      return res.status(404).json({
+        status: 'error',
+        message: 'Wrong question id ',
+      });
+    }
+
+    return res.status(200).json({
+      status: 'success',
+      message: 'fetched the question',
+      question,
+    });
+
+}
+
+
+}
+
+
+
 
 export default Questions;
