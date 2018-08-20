@@ -76,6 +76,7 @@ const questi = {
     return question;
   },
 
+
   /**
   * @param  {number}  the question id
   * @param  {number}  rthe id of the user
@@ -100,7 +101,7 @@ const questi = {
    * @param  {array}   The user datails
    * @return {object}  The datails of the user;
    */
-  postaQuestion(_title, _question, user) {
+  postAQuestion(_title, _question, user) {
     const questToDelete = fetchedQuestions.map(quest => quest.id);
 
     const quesObject = {

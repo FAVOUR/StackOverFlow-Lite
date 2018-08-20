@@ -8,4 +8,6 @@ router.get('/questions', questionController.getAllQuestions);
 
 router.get('/questions/:questionid', questionController.getAQuestion);
 
+
+
 export default router;
