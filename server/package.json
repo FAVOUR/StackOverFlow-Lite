@@ -8,7 +8,7 @@
     "lint": "eslint **/*.js --fix",
     "coverage": "nyc --reporter=lcov --reporter=text -icov npm test",
     "start": "npm run build && nodemon app.js --exec babel-node",
-    "build": "babel test -d posttest & babel src -d dist",
+    "build": "babel src/test -d posttest & babel src -d dist",
     "serve": "node dist/index.js"
   },
   "repository": {

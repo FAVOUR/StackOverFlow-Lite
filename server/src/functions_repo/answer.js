@@ -43,21 +43,21 @@ const answers = {
     * @return {object} new answer that has been addeed
     */
   postanAnswer(ans) {
-    const { _userId, questId, answer } = ans;
+    const { userId, questionId, answer } = ans;
 
-    const verify = fetchedAnswer.find(a => a.userId === _userId && a.questionId === questId);
+    const verify = fetchedAnswer.find(a => a.userId === userId && a.questionId === questionId);
 
     if (verify) {
-      return 'You cannot post this question unless you are register on the platform';
+      return userId;
     }
 
    const ids = fetchedAnswer.map(ans => ans.id);
 
     const newAnswer = {
       id: Math.max(...ids) + 1,
-      userId: _userId,
-      questionId: questId,
-      answer,
+      userId: userId,
+      questionId: questionId,
+      answer: answer,
       isAccepted: false,
     };
  

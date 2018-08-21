@@ -102,10 +102,11 @@ const questi = {
    * @return {object}  The datails of the user;
    */
   postAQuestion(_title, _question, user) {
-    const questToDelete = fetchedQuestions.map(quest => quest.id);
+
+    const questToSubmit = fetchedQuestions.map(quest => quest.id);
 
     const quesObject = {
-      id: Math.max(...questToDelete) + 1,
+      id: Math.max(...questToSubmit) + 1,
       user: user,
       title: _title,
       question: _question,
@@ -116,15 +117,25 @@ const questi = {
     return quesObject;
   },
 
+ //  /**
+ // * @param  {userid} The user id
+ // * @return {array} An array with the choice answer on top
+ // */
+ //  getUserQuestions(userId) {
+ //    const userQuestions = fetchedQuestions.filter(quest => quest.user.id === userId);
+ //    const output = [...userQuestions];
+ //    if (output.lenght < 1) return output;
+ //    return output.reverse();
+ //  },
+
   /**
  * @param  {userid} The user id
- * @return {array} An array with the choice answer on top
+ * @return {number} An array with the choice answer on top
  */
-  getUserQuestions(userId) {
-    const userQuestions = fetchedQuestions.filter(quest => quest.user.id === userId);
-    const output = [...userQuestions];
-    if (output.lenght < 1) return output;
-    return output.reverse();
+  verifyUser(_userId) {
+    const userId = fetchedQuestions.find(id => id.user.id === _userId);
+    if (userId) return null;
+    return userId;
   },
 
 

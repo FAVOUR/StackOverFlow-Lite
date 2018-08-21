@@ -16,16 +16,6 @@ res.send("welcome to stackoverflow-lite");
 
   app.use('/api/v1', router);
 
-//   app.use('/api/v1/questions/:questionid', (req, res) => {
-
-// res.send(awesome);
-// //   res.json({
-// //     code: 200,
-// //     status: 'ok',
-// //     message:req.params.questionId});
-// });
-
-  // res.status(200).send(req.params.questionId)
 
 const port = process.env.PORT || 8000;
 

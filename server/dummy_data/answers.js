@@ -1,4 +1,3 @@
-
 const answers = [
   {
     id: 71,
@@ -37,3 +36,4 @@ const answers = [
   },
 
 ];
+export default answers;
