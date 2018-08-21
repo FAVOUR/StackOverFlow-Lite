@@ -45,4 +45,34 @@ describe(`Test all questions api /api/v1/questions`, (done) =>{
   });
 	       });
 
+
+
+});
+
+
+
+describe(`Test a questions api /api/v1/questions/:questionid`, (done) =>{
+	it('should return an object and and have a response of 200', () =>{
+
+	 chai.request(server)
+	 .get('/api/v1/questions/:questionid')
+	 .end((err, res) => {
+     res.body.should.have.status(200);
+     res.body.should.have.property('object');
+         done();
+  });
+});
+     it('it should have a response of 404 status if id does not match dummydata', () =>{
+
+	chai.request(server)
+	 .get('/api/v1/questions/:id')
+	.end((err, res) => {
+	if (err) done(err);
+        res.body.should.have.status(400);
+        done();
+  });
+	 });
+
+     
+
 });

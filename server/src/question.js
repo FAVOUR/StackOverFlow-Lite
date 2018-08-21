@@ -1,4 +1,4 @@
-import "babel-polyfill";
+
 // import fetchedQuestions from '../dummy/questions';
 
 
@@ -70,11 +70,12 @@ const questi = {
      * @param  {number} id of the question
      * @return {object} details of the question
      */
-  getAQuestions(questionid) {
+  getAQuestion(questionid) {
     const question = fetchedQuestions.find(quest => quest.id === questionid);
     if (question === undefined || question === null) return null;
     return question;
   },
+
 
   /**
   * @param  {number}  the question id
@@ -100,7 +101,7 @@ const questi = {
    * @param  {array}   The user datails
    * @return {object}  The datails of the user;
    */
-  postaQuestion(_title, _question, user) {
+  postAQuestion(_title, _question, user) {
     const questToDelete = fetchedQuestions.map(quest => quest.id);
 
     const quesObject = {
