@@ -1,5 +1,5 @@
 
-import answer from '../src/answer';
+import answer from '../functions_repo/answer';
 
 
 const fetchedAnswer = [

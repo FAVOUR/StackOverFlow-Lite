@@ -1,5 +1,5 @@
 import chai from 'chai';
-import questions from '../dist/question';
+import questions from '../dist/functions_repo/question';
 
 const { expect } = chai;
 

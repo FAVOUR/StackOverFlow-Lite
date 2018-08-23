@@ -1,18 +1,23 @@
-import questions from '../src/question';
-import answer from '../src/answer';
+import questions from '../functions_repo/question';
+import answer from '../functions_repo/answer';
 
  class Questions {
 
     static getAllQuestions(req, res){
         
+// npm run build & nyc mocha posttest/*.js
+// const result = {
+// 	status: 'success',
+// 	message: 'Successfully fetched Questions',
+// 	questions:questions.getAllQuestions(),
+//     };
 
-const result = {
-	status: 'OK',
-	message: 'Successfully fetched Questions',
-	questions:questions.getAllQuestions(),
-    };
-
-res.status(200).send(result) }; 
+return res.status(200).json({
+      status: 'success',
+  message: 'Successfully fetched Questions',
+  questions:questions.getAllQuestions(),
+    });
+     }; 
 
 static getAQuestion(req,res){
 const questionId =parseInt(req.params.questionid)
