@@ -15,41 +15,16 @@
         </div>
         <nav>
           <ul>
-                <li><a href="index.html" class="top_nav_page">Recent Questions</a></li>
+                <li><a href="recentquestions.html" class="top_nav_page">Recent Questions</a></li>
                 <li><a href="ask_a_question.html" class="top_nav_page" > Ask a Question</a></li>
-                 <!-- <li> <img src="Image/img_avatar.png" alt="Avatar" ></li> -->
+                <li><a href="profile.html" class="sidebar_link"> Profile </a></li>
                 <li id="logout"> <a href="signin.html" class="top_nav_page" > Logout</a></li>  
           </ul>
         </nav>
     </div>
   </header>
          <main>
-            <div class="containers">
-
-                    <aside id="sidebar">
-         <!--        <div id="left_sidebar_wrapper"> -->
-
-                  <div class="left_sidebar">
-
-                             <a href="index.html" class="sidebar_link">Recent Questions </a>
-
-                            </div>
-
-                                 <div  class="left_sidebar">
-                
-                                    <a href="ask_a_question.html" class="sidebar_link"> Ask a Question </a>
-                 
-                            </div>
-
-                                    <div class="left_sidebar">
-                
-                                   <a href="profile.html" class="sidebar_link"> Profile </a>
-
-                       <!--  </div> -->
-            
-                </div>
-              
-         </aside>
+            <div class="_container">
 
 
                          <article>
@@ -70,45 +45,122 @@
                    </div>
 
                  </section>
-
+                         commit -m "[finishes #123123] Implemented the UI feedback given by LFA"
+                      <section>
+                                      <form  class="answer_a_question"action="clicked_question.html">
+                            <h3 class="contribution">Your answer is important too, Make your contribution in the box</h3>
+                          <!-- <input type="text" name="title" placeholder="Title" class="title_box"> -->
+                          <textarea  placeholder="Answer" wrap="hard" class="question" ></textarea>
+                          <input type="submit" name="login" id="submit_question" class="btn" >
+   
+                         </form>
                        
-                              
-                           <section>
+                           </section>  
+
+                              <section>
                                       <h2>Answers</h2>
 
                                                 <ul id="answers_wrapper" class="wrapper shadow">   
                               
-                                                                        <li class="response">  <p class="answers">
+                              <li class="response"> 
+                                <div  class="response_container">
+                                  <p class="accepted">ACCEPTED</p>
+                        <p class="answers">
+
                             After installing msysgit I have the Git Bash here option in the context menu in Windows Explorer. So I just simply navigate to the directory and then open Bash right there
                             I also copied the default Git Bash shortcut to the desktop and edited its Start in property to point to my project directory. It works flawlessly.
                            Unfortunately Git Bash won't open my htdocs folder shortcut on my desktop, and it takes 5 cds to get to my desired directory.
-                            </p>
+                         </p>
+
+                          <div class="reaction">
+                              <a href="#" class="accept"> <button>Accept</button></a>
+                              <a href="#" class="reject"> <button>Reject</button></a>
+                              <div class="thumbs-up_wrapper">
+                              <img src="image/thumbs-up.png" alt="thumbs-up" class="thumbs-up">
+                              <span>50</span>
+                              </div>
+                              <div class="thumbs-down_wrapper">
+                              <img src="image/thumb-down.png" alt="thumb-down" class="thumbs-down">
+                              <p class="thumbs-down_tot">50</p>
+                              </div>
+                          </div>
+                       </div>
+
                              </li>
                                      
-                                                                 <li class="response">    
+                                                                 <li class="response">   
+                                                                  <div  class="response_container">
+                                  <p class="accepted">ACCEPTED</p> 
 
                            <p class="answers">
                             After installing msysgit I have the Git Bash here option in the context menu in Windows Explorer. So I just simply navigate to the directory and then open Bash right there
                             I also copied the default Git Bash shortcut to the desktop and edited its Start in property to point to my project directory. It works flawlessly.
                            Unfortunately Git Bash won't open my htdocs folder shortcut on my desktop, and it takes 5 cds to get to my desired directory.
                             </p>    
-
+                              
+                          <div class="reaction">
+                              <a href="#" class="accept"> <button>Accept</button></a>
+                              <a href="#" class="reject"> <button>Reject</button></a>
+                              <div class="thumbs-up_wrapper">
+                              <img src="image/thumbs-up.png" alt="thumbs-up" class="thumbs-up">
+                              <span>50</span>
+                              </div>
+                              <div class="thumbs-down_wrapper">
+                              <img src="image/thumb-down.png" alt="thumb-down" class="thumbs-down">
+                              <p class="thumbs-down_tot">50</p>
+                              </div>
+                          </div>
+                       </div>
                              </li>  
 
-                                                         <li class="response">  <p class="answers">
+                                                         <li class="response">
+                                                           <div  class="response_container">
+                                  <p class="accepted">ACCEPTED</p>
+                                                           <p class="answers">
                             After installing msysgit I have the Git Bash here option in the context menu in Windows Explorer. So I just simply navigate to the directory and then open Bash right there
                             I also copied the default Git Bash shortcut to the desktop and edited its Start in property to point to my project directory. It works flawlessly.
                            Unfortunately Git Bash won't open my htdocs folder shortcut on my desktop, and it takes 5 cds to get to my desired directory.
                             </p>
+
+
+                          <div class="reaction">
+                              <a href="#" class="accept"> <button>Accept</button></a>
+                              <a href="#" class="reject"> <button>Reject</button></a>
+                              <div class="thumbs-up_wrapper">
+                              <img src="image/thumbs-up.png" alt="thumbs-up" class="thumbs-up">
+                              <span>50</span>
+                              </div>
+                              <div class="thumbs-down_wrapper">
+                              <img src="image/thumb-down.png" alt="thumb-down" class="thumbs-down">
+                              <p class="thumbs-down_tot">50</p>
+                              </div>
+                          </div>
+                       </div>
                              </li>
                                      
-                                                                 <li class="response">    
+                                                                 <li class="response"> 
+                                                                  <div  class="response_container">
+                                  <p class="accepted">ACCEPTED</p>   
 
                            <p class="answers">
                             After installing msysgit I have the Git Bash here option in the context menu in Windows Explorer. So I just simply navigate to the directory and then open Bash right there
                             I also copied the default Git Bash shortcut to the desktop and edited its Start in property to point to my project directory. It works flawlessly.
                            Unfortunately Git Bash won't open my htdocs folder shortcut on my desktop, and it takes 5 cds to get to my desired directory.
                             </p>
+                           <div class="reaction">
+                              <a href="#" class="accept"> <button>Accept</button></a>
+                              <a href="#" class="reject"> <button>Reject</button></a>
+                              <div class="thumbs-up_wrapper">
+                              <img src="image/thumbs-up.png" alt="thumbs-up" class="thumbs-up">
+                              <span>50</span>
+                              </div>
+                              <div class="thumbs-down_wrapper">
+                              <img src="image/thumb-down.png" alt="thumb-down" class="thumbs-down">
+                              <p class="thumbs-down_tot">50</p>
+                              </div>
+                          </div>
+                       </div>
+
                              </li>  
 
                              </ul>
@@ -120,86 +172,31 @@
 
 
 
-                         <article>
+                        <!--  <article>
 
                               <div class="container" >
 
-                                               <!--  <div id="question_wrapper" class="wrapper">  -->  
-                              <p id="contribution">Your answer is important too,Make your contribution in the box</p>
+                                               <!- <div id="question_wrapper" class="wrapper">  -->  
+                             <!--  <p id="contribution">Your answer is important too,Make your contribution in the box</p>
                               
                                 <textarea id="user_answer" placeholder="Your answer"  wrap="hard"> 
                                   
-                    </textarea>
+                    </textarea> -->
 
-                                  <button id="answer_question"  type="submit" class="done">
+                                 <!--  <button id="answer_question"  type="submit" class="done">
                                          Submit 
-                                  </button>
+                                  </button> --> 
+
                                
-                  <!--  </div> -->
 
-                        </article >
+                            
 
+                      
                   
-
-
-
-                   
 
                    </div>
                    
                  </main>
-
-
-
-
-<footer>
-    <div class="footer-col">
-                            <h3 class="">
-                                Subscribe
-                            </h3>
-                            <p>
-                                Get Updates based on your interest.
-                            </p>
-                            <div class="form-row" >
-                                    <input type="email"  placeholder="Email">
-                            </div>
-                            <div class="form-row">
-                                <button class="subscribe_button" type="submit" >Subscribe</button>
-                            </div>
-                        </div>
-                        <div class="footer-col social">
-                            <h3 class="connect">
-                                Connect With Us
-                            </h3>
-                            <h4>
-                                We are social !
-                                 </h4>
-                            <ul class="social">
-
-                                      <li id="location" class="social_media">
-                                           <figure>
-                                             <img src="./Image/facebook.png" class="social_icon" alt="facebook">
-                                             
-                                           </figure>
-                                      </li>
-
-                                           <li id="github" class="social_media"> 
-                                         <figure>
-                                             <img src="./Image/twitter.png" class="social_icon" alt="twitter">
-                              
-                                           </figure>
-                                      
-                                           </li>
-                                    
-                                 </ul>
-
-                        <div class="footer-row">
-                       <p class="">
-                           © Copyright 2018 StackOverflow-Lite - All Rights Reserved
-                      </p>
-   </div>
-
-    </footer>
      
 
 </body>
