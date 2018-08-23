@@ -39,35 +39,53 @@ const fetchedAnswer = [
 
 ];
 
+const fetchedUsers = [
+  {
+    firstname: 'Olije Favour',
+    Id: '222',
+    password: '345feg',
+    email: 'truelyfavoured@gmail.com',
+    date_of_reg: new Date(),
+    entries: 0,
+
+  },
+
+  {
+    name: 'Don Joe',
+    Id: '252',
+    password: '783hy',
+    email: 'yourfav@gmail.com',
+    date_of_reg: new Date(),
+    entries: 0,
+  },
+];
 
  class Answers {
 
 
 static addAnAnswer(req,res){
 
- const {userId,questionId,answer} = req.body;
-  const  _userId =Number(userId);
-  const  _questionId =Number(questionId);
- const data = req.body;
+  const {userId, questionId, answer} = req.body;
+const data = {userId, questionId, answer};
 
-  // const _answer =answer.postanAnswer(data);
-  const verify = fetchedAnswer.find(a => a.userId === _userId);
+ const _userId = parseInt(data.userId,10);
 
-    if (typeof verify === 'undefined' ) {
+
+    if (answer === "" ) {
       return res.status(404).json({
         status: 'error',
-        message: 'You have to be loggedin to answer a question',
+        message: 'Error posting answer',
       });
     }
    
 
-   else{
+   
     return res.status(201).json({
       status: 'success',
       message: 'Your question has been succesfuly added',
-      answer: _answer
+      answer,
     });
-   } 
+   
 }
 // git commit -m "[finishes #159983144] api endpoint and test has been finished"
 // git commit -m "[Feature #159983144] restructured my files and fixed errors"

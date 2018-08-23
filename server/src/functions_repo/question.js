@@ -117,23 +117,23 @@ const questi = {
     return quesObject;
   },
 
- //  /**
- // * @param  {userid} The user id
- // * @return {array} An array with the choice answer on top
- // */
- //  getUserQuestions(userId) {
- //    const userQuestions = fetchedQuestions.filter(quest => quest.user.id === userId);
- //    const output = [...userQuestions];
- //    if (output.lenght < 1) return output;
- //    return output.reverse();
- //  },
+  /**
+ * @param  {userid} The user id
+ * @return {array} An array with the choice answer on top
+ */
+  getUserQuestions(userId) {
+    const userQuestions = fetchedQuestions.filter(quest => quest.user.id === userId);
+    const output = [...userQuestions];
+    if (output.lenght < 1) return output;
+    return output.reverse();
+  },
 
   /**
  * @param  {userid} The user id
  * @return {number} An array with the choice answer on top
  */
   verifyUser(_userId) {
-    const userId = fetchedQuestions.find(id => id.user.id === _userId);
+    const userId = fetchedQuestions.find(_id => _id.user.Id === _userId);
     if (userId) return null;
     return userId;
   },
