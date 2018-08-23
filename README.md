@@ -13,7 +13,4 @@ answer
 
 View the site [here](https://favour.github.io/StackOverFlow-Lite/UI-templates/index.html)
 
-<<<<<<< HEAD
 
-=======
->>>>>>> UI
