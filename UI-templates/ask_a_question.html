@@ -14,46 +14,22 @@
 		    </div>
 		    <nav>
 		    	<ul>
-	    		    <li><a href="index.html" class="top_nav_page"  > Recent Questions</a></li>
-		            <li><a href="ask_a_question.html" class="top_nav_page" > Ask a Question</a></li>
-		             <!-- <li> <img src="Image/img_avatar.png" alt="Avatar" ></li> -->
+            <li><a href="recentquestions.html" class="top_nav_page"  > Recent Questions</a></li>
+		            <!-- <li><a href="ask_a_question.html" class="top_nav_page" > Ask a Question</a></li> -->
+		          <li><a href="profile.html" class="sidebar_link"> Profile </a></li>
 		            <li id="logout"> <a href="signin.html" class="top_nav_page" > Logout</a></li>	
 		    	</ul>
 		    </nav>
 		</div>
 	</header>
          <main>
-              <div class="container">
+           <!--    <div class="container"> -->
 
-              	 <aside id="sidebar">
-         <!--        <div id="left_sidebar_wrapper"> -->
-
-        	        <div class="left_sidebar">
-
-                           <a href="index.html" class="sidebar_link">Recent Questions </a>
-
-                            </div>
-
-                                 <div  class="left_sidebar">
-                
-                                    <a href="ask_a_question.html" class="sidebar_link"> Ask a Question </a>
-                 
-                            </div>
-
-                                    <div class="left_sidebar">
-                
-                                   <a href="profile.html" class="sidebar_link"> Profile </a>
-
-                       <!--  </div> -->
-            
-                </div>
-            
-         </aside>
+              	<!--  -->
 
 
 
-
-         <article id="question_title">
+         <!-- <article id="question_title">
                        
                 <h3 class="contribution">Post your question and let the community take it up from there</h3>
                          
@@ -61,7 +37,7 @@
 
                               <h4 id="title">Title your Question here</h4>
                               
-                                <textarea id="title_box" placeholder="Question Title"  wrap="hard"> 
+                                <form id="title_box" placeholder="Question Title"  wrap="hard"> 
                                   
                     </textarea>
 
@@ -76,13 +52,12 @@
 
                          
                           <section>
-<!-- 
                               <div class="container" > -->
 
                                                <!--  <div id="question_wrapper" class="wrapper">  -->  
                             
-                              
-                                <textarea id="user_answer" placeholder="Your question"  wrap="hard"> 
+                         <!--      
+                                <textarea  placeholder="Yourquestion"  > 
                                   
                     </textarea>
 
@@ -90,67 +65,29 @@
                                          Submit 
                                   </button>
                                
-                  <!--  </div> -->
-
+                  <!-  </div> -->
+<!-- 
                         </section >
                             
                                    
-                           </article>
-                   </div>
+                           </article> --> 
+
+
+                          <form  class="ask_a_question"action="recentquestions.html">
+                            <h3 class="contribute">Ask a question and let the community take it up from there</h3>
+                          <input type="text" name="title" placeholder="Title" class="title_box">
+                          <textarea  placeholder="Question" wrap="hard" class="question" ></textarea>
+                          <input type="submit" name="login" id="submit_question" class="btn">
+   
+                         </form>
+
+                        
+
+            <!--    </div> -->
                    
                  </main>
 
 
 
-
-<footer>
-    <div class="footer-col">
-                            <h3 class="">
-                                Subscribe
-                            </h3>
-                            <p>
-                                Get Updates based on your interest.
-                            </p>
-                            <div class="form-row" >
-                                    <input type="email"  placeholder="Email">
-                            </div>
-                            <div class="form-row">
-                                <button class="subscribe_button" type="submit" >Subscribe</button>
-                            </div>
-                        
-                        <div class="footer-col social">
-                            <h3 class="connect">
-                                Connect With Us
-                            </h3>
-                            <h4>
-                                We are social !
-                                 </h4>
-                            <ul class="social">
-
-                                      <li  class="social_media">
-                                           <figure>
-                                             <img src="./Image/facebook.png" class="social_icon" alt="facebook">
-                                             
-                                           </figure>
-                                      </li>
-
-                                           <li  class="social_media"> 
-                                         <figure>
-                                             <img src="./Image/twitter.png" class="social_icon" alt="twitter">
-                              
-                                           </figure>
-                                      
-                                           </li>
-                                    
-                                 </ul>
-                               </div>
-
-                        <div class="footer-row">
-                       <p class="">
-                           © Copyright 2018 StackOverflow-Lite - All Rights Reserved
-                      </p>
-   </div>
- </div>
-    </footer>  
 </body>
 </html>

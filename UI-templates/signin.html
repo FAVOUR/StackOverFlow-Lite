@@ -3,23 +3,42 @@
 <head>
 	<title>Stackoverflow-Lite|Sign In </title>
 	<link rel="stylesheet" type="text/css" href="Styles/signin_signup.css">
+     <link rel="stylesheet" type="text/css" href="./Styles/style.css">
 </head>
-<body>
-        
-	<div class="signupbox">
+<body class="bk_color">
+
+      <header>
+    <div class="container">
+      <div id="wrapper">
+      <h1 id="logo">StackOverflow-Lite</h1>
+        </div>
+        <nav>
+          <ul>
+                <li><a href="recentquestions.html" class="top_nav_page">Recent Questions</a></li>
+                <li><a href="ask_a_question.html" class="top_nav_page" > Ask a Question</a></li>
+                 <!-- <li> <img src="Image/img_avatar.png" alt="Avatar" ></li> -->
+                <li id="login"> <a href="signin.html" class="top_nav_page" > SignIn</a></li>  
+          </ul>
+        </nav>
+    </div>
+  </header>
+ <main> 
+	<div class="signinbox">
                   
 		<form  action="index.html">
-			<h2>Sign In </h2>
+			<h2 class="heading">Sign In </h2>
         <label> Email</label>
-        <input type="email" name="email" placeholder="email">
+        <input type="email" name="email" placeholder="email" class="input_field">
         <label> Password</label>
-        <input type="password" name="password" placeholder="password">
+        <input type="password" name="password" placeholder="password" class="input_field">
         <input type="submit" name="login">
 
 </form>
-     <p>Not Registered? <a href="signup.html">Sign up</a></p>
-    
+<div class="other">
+     <p id="reg">Not Registered? <a href="signup.html">Sign up</a></p>
+       </div>
     </div>
+</main>  
 
 </body>
 </html>

@@ -3,31 +3,56 @@
 <head>
 	<title>Stackoverflow-Lite|Signup</title>
 	<link rel="stylesheet" type="text/css" href="Styles/signin_signup.css">
+     <link rel="stylesheet" type="text/css" href="./Styles/style.css">
 </head>
-<body>
-        
-	<div class="loginbox">
-                  <!-- <h1>Sign In </h1> -->
-		<form>
-			<h2>Sign up </h2>
-        <label> Firstname</label>
-        <input type="text" name="firstName" placeholder="firstname">
-        <label> LastName</label>
-        <input type="text" name="lastName" placeholder="lastname">
-        <label> Email</label>
-        <input type="email" name="email" placeholder="email">
-        <label> Country</label>
-        <input type="text" name="country" placeholder="country">
-        <label> Phone</label>
-        <input type="tel" name="phone" placeholder="phone">
-        <label> Password</label>
-        <input type="password" name="password" placeholder="password">
-        <input type="submit" name="login" id="signup">
+<body class="bk_color">
 
+        <header>
+        <div class="container">
+            <div id="wrapper">
+            <h1>StackOverflow-Lite</h1>
+            </div>
+          <nav class="topnav" id="myTopnav">
+                <ul>
+                    <li><a href="recentquestions.html" class="top_nav_page"  > Recent Questions</a></li>
+                    <li> <a href="ask_a_question.html" class="top_nav_page" > Ask a Question</a></li>
+                    <!-- <li><a href="profile.html" class="sidebar_link"> Profile </a></li> -->
+                    <li id="logout"> <a href="signin.html" class="top_nav_page" > Logout</a></li>   
+                </ul>
+            </nav>
+         <a href="javascript:void(0);"  class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </header>
+      <main>   
+        <div class="container">
+	<div class="signupbox">
+                  <!-- <h1>Sign In </h1> -->
+		<form action="index.html">
+			<h2 class="heading">Sign up </h2>
+        <label> Firstname</label>
+        <input type="text" name="firstName" placeholder="firstname" class="signup_input input_field">
+        <label> LastName</label>
+        <input type="text" name="lastName" placeholder="lastname" class="signup_input input_field">
+        <label> Email</label>
+        <input type="email" name="email" placeholder="email" class="signup_input input_field">
+        <label> Country</label>
+        <input type="text" name="country" placeholder="country" class="signup_input input_field">
+        <label> Phone</label>
+        <input type="tel" name="phone" placeholder="phone" class="signup_input input_field">
+        <label> Password</label>
+        <input type="password" name="password" placeholder="password" class="signup_input input_field">
+        <input type="submit" name="login" class="signup_button">
+   
 </form>
-     <p>Registered?<a href="signin.html">Sign In</a></p>
-    
+
+<div class="other">
+
+     <p id="reg">Registered?<a href="signin.html">Sign In</a></p>
+
     </div>
 
+    </div>
+</div>
+ </main> 
 </body>
 </html>
