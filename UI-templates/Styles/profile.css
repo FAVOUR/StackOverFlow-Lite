@@ -2,6 +2,7 @@ body{
 	margin:0;
 	padding: 0;
 	/* display:flex;*/
+
 }
 
 main{
@@ -9,28 +10,42 @@ main{
   flex:1;
   margin:auto;
   display:flex;
-  flex-direction:column;
+/*flex-direction:row;*/
 }
 
 
-#profile_activity_col{
-	width:80%;
+/*#profile_activity_col{
+	width:100%;
 	flex:1;
     display:flex;
-   /* flex-direction:column;*/
-}
+  /*  flex-direction:row;*/
+/*}*/
+
+/*.profile_activity_wrapper{
+	width:100%;
+	flex:1;
+    display:flex;
+    flex-direction:row;
+}*/
 
 /*.containers{  
    
    display:flex;
    flex-direction:column;
-*/
 
+}*/
 
 /*aside{
 	flex:1;
 }*/
 
+
+#user_questions_answers{
+	flex: 1;
+	text-align: center;
+	display:flex;
+	align-items: baseline;
+}
 
 #details_card{
 	margin: 30px;
@@ -79,9 +94,10 @@ margin-top: 13px;
 flex:1;
 }
 
-#other_details{
+.other_details{
 flex:1;
 display:flex;
+  order: 1
 }
 
 figure{
@@ -142,6 +158,14 @@ article#users_question_and_answers{
 
 }
 
+section.user_question_container{
+	 flex: 1;
+}
+
+section.user_answer_container
+{
+	 flex: 1;
+}
 /*question_asked_wrapper*/
 
 section#question_asked_wrapper{
@@ -155,13 +179,13 @@ section#question_asked_wrapper{
 /*questions asked*/
 #questions_asked{
 	background-color:white;
-	margin-right:20px;
+	/*margin-right:20px;*/
 	display:flex;
 }
 
-#most_answers{
+/*#most_answers{
 	margin-top:100px;
-}
+}*/
 
 /*answers given wrapper*/
 section#answers_given_wrapper{	 
@@ -186,7 +210,7 @@ div#answers_given{
 
 .achivement{
 	margin:auto;
-	font-size: 150px;
+	font-size: 30px;
 /*	font-weight:bold;*/
 
 }
@@ -196,7 +220,7 @@ p.total{
 }
 
 .achivement_title{
-	font-size:30px;
+	font-size:20px;
 	/*margin:0;*/
 
 }
@@ -217,9 +241,44 @@ hr{
      box-shadow: 3px 3px 5px 6px #ccc;
 }
 
-h2{
-	margin-top: 70px;
+#recent_quest,#most_answers{
+	margin-top: 50px;
 }
+
+.more_details{
+	flex:1 ;
+	display: flex;
+	flex-direction: column;
+
+}
+
+/*delete section*/
+
+.delete_container{
+	flex:1;
+	display:flex;
+    order: 2;
+    margin:auto;
+}
+
+.delete_wrapper{
+	flex:1;
+	text-align: center;
+	justify-content: center;
+	 margin:auto;
+}
+
+.delete_btn{
+	font-size:20px;
+	border-radius:10px;
+	outline:none;
+
+}
+
+.delete{
+	
+}
+
 
 
 
