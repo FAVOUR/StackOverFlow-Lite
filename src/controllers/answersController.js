@@ -88,7 +88,7 @@ const data = {userId, questionId, answer};
    
 }
 // git commit -m "[finishes #159983144] api endpoint and test has been finished"
-// git commit -m "[Feature #159983144] restructured my files and fixed errors"
+// git commit -m "[Feature #159983144] completed my API endpoints"
 
 }
 
