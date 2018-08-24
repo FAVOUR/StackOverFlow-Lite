@@ -11,6 +11,7 @@
     "build": "babel test -d posttest & babel src -d dist",
     "serve": "node dist/index.js"
   },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FAVOUR/StackOverFlow-Lite.git"
