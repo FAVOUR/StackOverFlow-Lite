@@ -48,7 +48,7 @@ const answers = {
     const verify = fetchedAnswer.find(a => a.userId === userId && a.questionId === questionId);
 
     if (verify) {
-      return userId;
+      return null;
     }
 
    const ids = fetchedAnswer.map(ans => ans.id);
@@ -83,7 +83,7 @@ const answers = {
  * @return {array} array of accepted answers with the accepted answer on top
  */
   acceptAnswer(questionId) {
-    const answer = fetchedAnswer.find(question => question.id);
+    const answer = fetchedAnswer.find(question => question.id === questionId);
     const index = fetchedAnswer.indexOf(answer);
     answer.isAccepted = true;
     const acceptedAnswer = fetchedAnswer.splice(index, 1, answer);

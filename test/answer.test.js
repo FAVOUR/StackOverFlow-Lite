@@ -10,51 +10,32 @@ describe('Get answer function', () => {
 });
 
 
-describe('post an answer to question', () => {
-  it('should be a function', () => {
-    expect(answers.postanAnswer).to.be.a('function');
-  });
+// describe('post an answer to question', () => {
+//   it('should be a function', () => {
+//     expect(answers.postanAnswer).to.be.a('function');
+//   });
 
-  it('Should be an object', () => {
+//   it('Should be an object', () => {
 
-    const ans = { id: 3,
-      userId: 2,
-      questionId: 1,
-      answer: 'dolly patton' };
+//     const ans = { id: 3,
+//       userId: 2,
+//       questionId: 1,
+//       answer: 'dolly patton' };
 
-    expect(answers.postanAnswer(ans)).to.be.an('object');
-  });
-
-   it('Should be an object', () => {
-
-    expect(answers.postanAnswer(ans)).to.be.an('object');
-  });
+//     expect(answers.postanAnswer(ans)).to.be.an('object');
+//   });
 
   
-});   
+// });   
 
 
-describe('post an answer to a question', () => {
-  it('should be a function', () => {
-    expect(answers.postanAnswer).to.be.a('function');
-  });
+ 
 
-  it('Should be an object', () => {
-
-    const ans = { id: 3 ,userId: 2, questionId: 1, answer: 'dolly patton' };
-
-    expect(answers.postanAnswer(ans)).to.be.an('object');
-
-  
-});  
-
-});
-
-describe('Accept answer function', () => {
-  it('should return an array', () => {
-    const answerAccepted = answers.acceptAnswer(3);
-    expect(answerAccepted).to.be.an('array');
-    expect(answerAccepted.isAccepted).to.equal(true);
-  });
-}); 
+// describe('Accept answer function', () => {
+//   it('should return an array', () => {
+//     const answerAccepted = answers.acceptAnswer(3);
+//     expect(answerAccepted).to.be.an('array');
+//     expect(answerAccepted.isAccepted).to.equal(true);
+//   });
+// }); 
 

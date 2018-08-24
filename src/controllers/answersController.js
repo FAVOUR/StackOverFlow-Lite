@@ -1,4 +1,5 @@
 
+
 import answer from '../functions_repo/answer';
 
 
@@ -88,7 +89,7 @@ const data = {userId, questionId, answer};
    
 }
 // git commit -m "[finishes #159983144] api endpoint and test has been finished"
-// git commit -m "[Feature #159983144] completed my API endpoints"
+// git commit -m "[Feature #159983144] integrated travis and coveralls to my project"
 
 }
 
